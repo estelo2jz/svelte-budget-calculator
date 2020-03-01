@@ -39,10 +39,10 @@
   </div>
   <div class="expense-buttons">
     <button class="expense-btn edit-btn" on:click="{()=>setModifiedExpense(id)}">
-      <i class="fas fa-pen" />
+      <i class="fas fa-pen" />edit
     </button>
     <button class="expense-btn delete-btn" on:click="{()=>removeExpense(id)}">
-      <i class="fas fa-trash" />
+      <i class="fas fa-trash" />delete
     </button>
 
   </div>
