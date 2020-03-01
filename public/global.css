@@ -38,8 +38,7 @@ Global Styles
 body {
 	font-family: "Catamaran", sans-serif;
 	color: var(--mainBlack);
-	/* background: var(--mainGrey); */
-	background: red;
+	background: var(--mainGrey);
 	line-height: 1.4;
 	font-size: 1rem;
 	font-weight: 300;
