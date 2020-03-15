@@ -1,0 +1,12 @@
+{
+  "version": 3,
+  "file": "bundle.css",
+  "sources": [
+    "..\\..\\ExpensesList.svelte"
+  ],
+  "sourcesContent": [
+    "<script>\r\n  import SectionTitle from './Title.svelte';\r\n  import Expense from './Expense.svelte';\r\n  import { fly } from 'svelte/transition';\r\n  import { flip } from 'svelte/animate';\r\n  export let expenses = [];\r\n  \r\n</script>\r\n\r\n<style> \r\n  h2 {\r\n    text-transform: capitalize;\r\n  }\r\n</style>\r\n\r\n<section>\r\n  <SectionTitle title=\"expense list\" />\r\n  <ul>\r\n    {#each expenses as expense, index (expense.id)}\r\n    <div in:fly={{x:200, delay: index*700 }} out:fly={{ x:-200}} animate:flip>  \r\n      <Expense {...expense}  />\r\n    </div>\r\n    {:else}\r\n      <h2>No Expenses Added To The List!</h2>\r\n    {/each}\r\n  </ul>\r\n</section>"
+  ],
+  "names": [],
+  "mappings": "AAUE,EAAE,cAAC,CAAC,AACF,cAAc,CAAE,UAAU,AAC5B,CAAC"
+}
